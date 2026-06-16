@@ -1,3 +1,26 @@
+## 2026-06-16 (later) — v1.3
+
+### Added: `disk-fix` skill
+
+**Problem:**
+WD Elements 1TB USB HDD kept losing its drive letter after reconnection. Windows SAN Policy default ("OfflineShared") forcibly takes external disks offline. Combined with USB selective suspend, the drive letter disappears every time the disk is re-plugged or the system wakes from sleep.
+
+**Solution:**
+A 3-in-1 batch script that permanently fixes the issue:
+1. Online the disk + assign drive letter (immediate fix)
+2. Set SAN POLICY=OnlineAll (permanent — disk auto-mounts on reconnect)
+3. Disable USB selective suspend (prevent power-saving from dropping the connection)
+
+**Results:**
+- Immediate: Drive F: accessible again
+- Permanent: No more drive letter loss after unplug/replug/reboot
+
+**Files:**
+- `disk-fix/skill.md` — Skill definition with full diagnostic + fix workflow
+- `disk-fix/fix_disk.bat` — One-click batch script (requires admin)
+
+---
+
 # Changelog
 
 ## 2026-06-16 — v1.2
