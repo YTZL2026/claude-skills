@@ -1,3 +1,25 @@
+## 2026-06-16 (night) — v1.5
+
+### Added: `desktop-organize` skill
+
+**Problem:**
+Desktop cluttered with 50+ scattered files: medical records, training PPTs, UUID-named images, project folders, temp Office files. Manual cleanup is tedious and error-prone.
+
+**Solution:**
+A 5-step intelligent desktop organization methodology:
+1. Full scan with file statistics
+2. Content-based classification (read file contents, not just names)
+3. Merge with existing folders, eliminate duplicates
+4. Semantic renaming (e.g. "数据5.12" → "专项审计数据")
+5. Generate README navigation + cleanup
+
+**Real case:** Organized user's desktop from 50+ scattered items down to 8 semantic folders plus shortcuts + toolkit. Merged 3 scattered QC material locations, 2 duplicate record archives.
+
+**Files:**
+- `desktop-organize/skill.md` — Full methodology and execution workflow
+
+---
+
 ## 2026-06-16 (evening) — v1.4
 
 ### Added: `recycle-fix` skill
