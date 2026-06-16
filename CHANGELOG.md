@@ -1,3 +1,24 @@
+## 2026-06-16 (evening) — v1.4
+
+### Added: `recycle-fix` skill
+
+**Problem:**
+Every time the WD Elements external HDD was plugged in, Windows popped up "Recycle Bin on F: is corrupted. Empty it?" The drive contained 60+ SID folders from different Windows installations (2017-2026), with one or more index files ($I) corrupted due to unsafe ejection or cross-version incompatibility.
+
+**Solution:**
+Delete the corrupted `$Recycle.Bin` hidden folder — Windows auto-creates a fresh one on next file deletion. One `rd /s /q` command, no admin required.
+
+**Root Cause:**
+- Unsafe ejection (pulling drive without "Safely Remove Hardware")
+- Cross-machine usage (different Windows versions create incompatible metadata)
+- Power loss during write operations
+- NTFS metadata inconsistency
+
+**Files:**
+- `recycle-fix/skill.md` — Skill definition with diagnostic + fix + optional permanent disable
+
+---
+
 ## 2026-06-16 (later) — v1.3
 
 ### Added: `disk-fix` skill

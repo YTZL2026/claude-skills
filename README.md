@@ -7,7 +7,7 @@
 </p>
 
 <p>
-  <a href="#"><img src="https://img.shields.io/badge/Skills-14涓?blue?style=flat-square" alt="Skills Count"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Skills-15涓?blue?style=flat-square" alt="Skills Count"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0-green?style=flat-square" alt="CC0"></a>
 </p>
 
@@ -23,6 +23,7 @@
 | 鍒嗙被 | Skills | 璇存槑 |
 |------|--------|------|
 | 馃彞 鍖荤枟 | `batch-import` | 鐥呭巻鏍锋湰鍏ㄦ牸寮忥紙docx/pdf/鍥剧墖锛夎嚜鍔ㄦ彁鍙栤啋CSV鈫掑鍏ヤ笉鑹簨浠剁郴缁?|
+| 🛡 工具 | `recycle-fix` | 外置硬盘/U盘回收站损坏修复 |
 | 🛡 工具 | `disk-fix` | 移动硬盘/U盘盘符丢失修复（SAN策略+USB省电） |
 | 🛡 工具 | `bookmark-fix` | 浏览器书签膨胀去重修复（电脑Chromium系） |
 | 馃敡 宸ュ叿 | `github-fix` | 鍗曚綅缃戠粶 GitHub 璁块棶淇锛坔osts + IP杞崲锛?|
